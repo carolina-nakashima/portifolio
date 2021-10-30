@@ -5,6 +5,7 @@
     --purple: #5280E2;
     --green: #15CDCB;;
     --bg-dark: #212226;
+    --bg-card: #2F3034;
     --light-grey: #E0DEDE;
 
     --menu-height: 75px;
@@ -156,6 +157,53 @@ nav ul a svg {
 .about-me .img-container .line.green {
     transform: rotate(-3.3deg);
     color: var(--green);
+}
+
+.services{
+    margin: 150px 0;
+    align-items: center;
+    padding: 0 100px;
+}
+
+.services h1{
+    font-size: 44px;
+    color: var(--purple);
+    text-align: center;
+
+}
+
+.services .cards{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 60px auto 0;
+}
+
+.services .cards .card-container{
+    max-width: 360px;
+    background-color: var(--bg-card);
+    border: 1px solid var(--purple);
+    border-radius: 16px;
+    padding: 40px 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.services .cards .card-container img {
+    margin-bottom: 40px;
+    width: 90px;
+}
+
+.services .cards .card-container h2{
+    color: var(--green);
+}
+
+.service-card + .service-card {
+    margin-left: 10px;
 }
 
 /*RESPONSIVIDADE*/
