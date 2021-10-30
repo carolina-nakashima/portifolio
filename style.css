@@ -128,17 +128,32 @@ nav ul a svg {
 .about-me .img-container{
     width: 50%;
     text-align: center;
+    position: relative;
 }
 
 .about-me .img-container img{
-    width: 40%;
+    width: 45%;
     height: 100%;
 }
 .about-me .container h1{
     color: var(--green);
+    padding-bottom: 45px;
 }
 
+.about-me .img-container .line {
+    border: 1px solid var(--purple);
+    width: calc(45% + 50px);
+    height: calc(100% + 50px);
 
+     position: absolute;
+    top: -25px;
+    left: calc(50% - 45%/2 - 25px);
+}
+
+.about-me .img-container .line.green {
+    transform: rotate(-3.3deg);
+    color: var(--green);
+}
 
 /*RESPONSIVIDADE*/
 
