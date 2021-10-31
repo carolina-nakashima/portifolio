@@ -117,10 +117,10 @@ nav ul a svg {
 }
 
 .about-me{
-    height: calc(100vh - var(--menu-height));
     display: flex;
     align-items: center;
     padding: 150px;
+    margin: 100px 0;
 }
 
 .about-me .container {
@@ -160,7 +160,7 @@ nav ul a svg {
 }
 
 .services{
-    margin: 150px 0;
+    margin: 100px 0;
     align-items: center;
     padding: 0 100px;
 }
@@ -169,7 +169,6 @@ nav ul a svg {
     font-size: 44px;
     color: var(--purple);
     text-align: center;
-
 }
 
 .services .cards{
@@ -234,6 +233,7 @@ nav ul a svg {
     .about-me {
         flex-direction: column;
         padding: 100px;
+        margin: 150px 0;
     }
     .about-me .container, .about-me .img-container {
         width: 100%;
@@ -241,7 +241,20 @@ nav ul a svg {
     .about-me .img-container{
         margin: 70px 0;
     }
-}
+    .services{
+        margin: 0;
+    }
+    .services .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .services .cards .card-container {
+        margin-bottom: 40px;
+        max-width: 500px;
+        
+    }
+    
 
 /* tablet */
 @media (max-width: 767px) {
@@ -281,8 +294,24 @@ nav ul a svg {
     }
     .about-me {
         padding: 0 50px;
+        margin: 100px 0;
     }
     .about-me .container h1{
         padding-bottom: 0px;
     } 
+    .about-me .img-container{
+        margin: 70px;
+    }
+    .services{
+        margin: 150px 0;
+        align-items: center;
+        padding: 0 30px;
+    }
+    .services .cards{
+        margin: 20px auto 0;
+    }
+    .services .cards .card-container {
+        margin-bottom: 20px;
+        max-width: 450px;
+    }
 }
