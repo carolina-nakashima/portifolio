@@ -50,17 +50,18 @@ p {
   color: var(--light-grey);
 }
 
-.button {
+button {
   background: var(--purple);
   border-radius: 16px;
   border: 0;
   padding: 8px 35px;
+  margin-top: 40px;
 
   font-size: 18px;
   font-weight: bold;
   color: #ffffff;
 
-  margin-top: 40px;
+  cursor: pointer;  
 }
 
 .secondary-button {
@@ -210,11 +211,11 @@ nav ul a svg {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
+  text-align: center;
 }
 
 .services .service-cards .card-container img {
-  margin-bottom: 40px;
+  margin: 0 auto 40px;
   width: 90px;
 }
 
@@ -227,12 +228,10 @@ nav ul a svg {
 }
 
 .portfolio {
+  margin: 150px 0 0px;
   padding: 0 100px;
-  margin-bottom: 100px;
   height: 800px;
   background-image: url("assets/portfolio-bg.png");
-/*   background-repeat: no-repeat;
-  background-size: cover; */
 }
 
 .portfolio h1 {
@@ -260,7 +259,7 @@ nav ul a svg {
   max-width: 360px;
   border: 1px solid #ffffff;
   border-radius: 16px;
-  padding: 40px 25px;
+  padding: 40px 25px 10px;
 
   display: flex;
   flex-direction: column;
@@ -301,6 +300,11 @@ nav ul a svg {
   border-radius: 16px;
   padding: 4px 15px;
 }
+
+.portfolio-cards + .portfolio-cards {
+  margin-left: 10px;
+}
+
 .curriculum  {
   padding:0 100px;
   text-align: center;
@@ -338,6 +342,31 @@ nav ul a svg {
   margin-bottom: 50px;
 }
 
+.contact {
+  max-width: 800px;
+  margin: 150px auto 70px;
+  text-align: center;
+}
+
+.contact h1{
+  background: -webkit-linear-gradient(var(--green),var(--purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  margin-bottom: 35px;
+}
+
+.contact .social-media {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  margin: 100px auto 0;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 40px;
+}
 
 /*RESPONSIVIDADE*/
 
@@ -417,6 +446,12 @@ nav ul a svg {
     padding: 70px 0;
     margin: 30px 0;
   }
+  .contact {
+    padding: 0 80px;
+  }
+  .contact .social-media{
+    width: 250px;
+  }
 }
 
 /* smartphone */
@@ -461,4 +496,5 @@ nav ul a svg {
   .curriculum .container .content .curriculum-info {
     padding: 0 15px;
   }
+  
 }
