@@ -6,6 +6,7 @@
   --bg-dark: #212226;
   --bg-card: #2f3034;
   --light-grey: #e0dede;
+  --medium-grey: #2f3034;
 
   --menu-height: 75px;
 }
@@ -60,6 +61,22 @@ p {
   color: #ffffff;
 
   margin-top: 40px;
+}
+
+.secondary-button {
+  background-color: var(--medium-grey);
+  border: 1px solid var(--purple);
+  border-radius: 16px;
+  color: var(--green);
+  font-weight: bold;
+  height: 80px;
+
+  display: flex;
+  align-items: center;
+}
+
+.secondary-button img {
+  margin-right: 15px;
 }
 
 header {
@@ -193,8 +210,7 @@ nav ul a svg {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  text-align: center;
+
 }
 
 .services .service-cards .card-container img {
@@ -285,6 +301,42 @@ nav ul a svg {
   border-radius: 16px;
   padding: 4px 15px;
 }
+.curriculum  {
+  padding:0 100px;
+  text-align: center;
+}
+
+.curriculum h1{
+  color: var(--green);
+  font-size: 44px;
+}
+
+.curriculum .container {
+  display: flex;
+  margin: 40px 0;
+}
+
+.curriculum .container .img-curriculum {
+  width: 35%;
+}
+
+.curriculum .container .content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  width: 100%;
+  color: var(--light-grey);
+}
+
+.curriculum .container .content .curriculum-info {
+  display: grid;
+  grid-template-columns: 150px auto;
+  grid-gap: 1rem;
+  margin-bottom: 50px;
+}
+
 
 /*RESPONSIVIDADE*/
 
@@ -390,7 +442,7 @@ nav ul a svg {
   .about-me .img-container {
     margin: 70px;
   }
-  .services .services-cards, .portfolio-container {
+  .services-cards, .portfolio-container {
   padding: 0 20px;
   }
   
