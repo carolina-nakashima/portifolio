@@ -313,7 +313,8 @@ nav ul a svg {
 
 .curriculum .container {
   display: flex;
-  margin: 40px 0;
+  margin: 50px auto;
+  max-width: 1200px;
 }
 
 .curriculum .container .img-curriculum {
@@ -390,6 +391,17 @@ nav ul a svg {
   .portfolio{
     height: 100%;
   }
+
+  .curriculum .container {
+    flex-wrap: wrap;
+  }
+
+  .curriculum .container .img-curriculum {
+    display: block;
+    margin: 0 auto 50px;
+    width: 100%;
+    max-width: 520px;
+  }
 }
 
 /* tablet */
@@ -442,9 +454,11 @@ nav ul a svg {
   .about-me .img-container {
     margin: 70px;
   }
-  .services-cards, .portfolio-container {
-  padding: 0 20px;
+  .services-cards, .portfolio-container, .curriculum {
+  padding: 30px 20px;
   }
   
-  
+  .curriculum .container .content .curriculum-info {
+    padding: 0 15px;
+  }
 }
